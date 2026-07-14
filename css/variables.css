@@ -1,0 +1,76 @@
+/* ==========================================================================
+   DESIGN TOKENS — VPP Hoàng Linh Store
+   Modern Minimal E-commerce (Apple / Muji / Notion / Stripe inspired)
+   ========================================================================== */
+:root {
+  /* ---- Brand Colors ---- */
+  --color-primary: #DD0000;
+  --color-primary-hover: #B80000;
+  --color-primary-light: #FFEAEA;
+  --color-secondary: #FF7A00;
+  --color-secondary-light: #FFF1E0;
+  --color-accent: #FFC857;
+
+  /* ---- Neutrals ---- */
+  --color-bg: #FAFAFB;
+  --color-surface: #FFFFFF;
+  --color-text: #1F2937;
+  --color-text-secondary: #6B7280;
+  --color-text-muted: #9CA3AF;
+  --color-border: #ECECEC;
+
+  /* ---- Status ---- */
+  --color-success: #16A34A;
+  --color-success-light: #EAFBF1;
+  --color-info: #2563EB;
+  --color-info-light: #EAF1FE;
+
+  /* ---- Shadow / Gradient ---- */
+  --shadow-color: rgba(0, 0, 0, .08);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, .04);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, .08);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, .12);
+  --shadow-primary: 0 10px 30px rgba(221, 0, 0, .18);
+  --gradient-hero: linear-gradient(135deg, #DD0000 0%, #F03A3A 55%, #FF7A00 100%);
+  --gradient-soft: linear-gradient(180deg, #FFF7F0 0%, #FAFAFB 100%);
+
+  /* ---- Typography ---- */
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* ---- Radius ---- */
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+  --radius-full: 999px;
+
+  /* ---- Spacing scale ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* ---- Motion ---- */
+  --transition-fast: 150ms cubic-bezier(.4,0,.2,1);
+  --transition-base: 250ms cubic-bezier(.4,0,.2,1);
+  --transition-slow: 400ms cubic-bezier(.4,0,.2,1);
+
+  /* ---- Layout ---- */
+  --container-max: 1660px;
+  --header-height: 84px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

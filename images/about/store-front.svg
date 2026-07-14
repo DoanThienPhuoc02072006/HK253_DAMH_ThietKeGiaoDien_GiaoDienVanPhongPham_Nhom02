@@ -1,0 +1,18 @@
+<svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="450" rx="20" fill="#FFF7F0"/>
+  <rect x="60" y="180" width="480" height="220" rx="8" fill="#ffffff" stroke="#ECECEC" stroke-width="2"/>
+  <rect x="60" y="120" width="480" height="70" rx="8" fill="#DD0000"/>
+  <rect x="60" y="150" width="480" height="14" fill="#B80000"/>
+  <g fill="#FFC857"><rect x="90" y="120" width="50" height="70"/><rect x="190" y="120" width="50" height="70"/><rect x="290" y="120" width="50" height="70"/><rect x="390" y="120" width="50" height="70"/><rect x="490" y="120" width="50" height="70"/></g>
+  <rect x="250" y="260" width="100" height="140" rx="4" fill="#FF7A00"/>
+  <circle cx="330" cy="330" r="5" fill="#FFF7F0"/>
+  <rect x="90" y="220" width="130" height="150" rx="6" fill="#FAFAFB" stroke="#ECECEC" stroke-width="2"/>
+  <rect x="380" y="220" width="130" height="150" rx="6" fill="#FAFAFB" stroke="#ECECEC" stroke-width="2"/>
+  <g stroke="#DD0000" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(115,255)">
+    <path d="M4 76l3-13L60 12l13 13-53 51-16 3z"/>
+  </g>
+  <g stroke="#2563EB" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(410,250)">
+    <rect x="0" y="0" width="70" height="90" rx="5"/><path d="M25 0v90M0 20h25M0 45h25M0 70h25"/>
+  </g>
+  <text x="300" y="163" font-family="Arial, sans-serif" font-weight="800" font-size="26" fill="#ffffff" text-anchor="middle">VPP HOÀNG LINH</text>
+</svg>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trang chủ | VPP Hoàng Linh</title>
+<meta name="description" content="Cửa hàng văn phòng phẩm, dụng cụ học tập chính hãng, giá tốt, giao hàng toàn quốc.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%23DD0000%22/><text x=%2212%22 y=%2217%22 font-size=%2214%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-weight=%22bold%22>HL</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="css/auth.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+<!-- ============================== TOPBAR ============================== -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>Miễn phí giao hàng cho đơn từ 300.000₫</span>
+    </div>
+    <div class="topbar-right">
+      <a href="contact.html">Hotline: 1900 6868</a>
+      <a href="about.html">Về chúng tôi</a>
+      <a href="contact.html">Liên hệ</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================== HEADER ============================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-main">
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Mở menu"><span data-icon="menu"></span></button>
+
+    <a href="index.html" class="logo">
+      <img class="logo-mark" src="images/logo/logo.svg" alt="VPP Hoàng Linh">
+      <span class="logo-text">VPP Hoàng Linh<span>Dụng cụ học tập & văn phòng</span></span>
+    </a>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+        <li class="has-mega">
+          <a href="products.html" class="nav-link">Sản phẩm <span data-icon="chevronDown"></span></a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <h4>Bút viết</h4>
+              <ul>
+                <li><a href="products.html?cat=but-bi">Bút bi</a></li>
+                <li><a href="products.html?cat=but-chi">Bút chì</a></li>
+                <li><a href="products.html?cat=but-gel">Bút gel</a></li>
+                <li><a href="products.html?cat=but-may">Bút máy</a></li>
+                <li><a href="products.html?cat=but-long">Bút lông &amp; Highlight</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>Giấy &amp; Sổ</h4>
+              <ul>
+                <li><a href="products.html?cat=giay-a4">Giấy A4</a></li>
+                <li><a href="products.html?cat=giay-a3">Giấy A3</a></li>
+                <li><a href="products.html?cat=giay-note">Giấy Note</a></li>
+                <li><a href="products.html?cat=giay-mau">Giấy màu</a></li>
+                <li><a href="products.html?cat=so">Sổ tay</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>Dụng cụ &amp; Thiết bị</h4>
+              <ul>
+                <li><a href="products.html?cat=ho-so">Hồ sơ &amp; Kẹp file</a></li>
+                <li><a href="products.html?cat=bang-keo">Băng keo &amp; Kéo</a></li>
+                <li><a href="products.html?cat=may-tinh">Máy tính Casio</a></li>
+                <li><a href="products.html?cat=may-in">Máy in &amp; Mực in</a></li>
+                <li><a href="products.html?cat=phu-kien">Phụ kiện văn phòng</a></li>
+              </ul>
+            </div>
+            <div class="mega-promo">
+              <div>
+                <strong>Flash Sale</strong><br>
+                <span>Giảm đến 40% dụng cụ học tập</span>
+              </div>
+              <a href="products.html?cat=khuyen-mai" class="btn btn-sm" style="background:#fff;color:var(--color-primary)">Mua ngay</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="products.html?filter=new" class="nav-link">Sản phẩm mới</a></li>
+        <li><a href="products.html?filter=bestseller" class="nav-link">Bán chạy</a></li>
+        <li><a href="products.html?filter=sale" class="nav-link">Khuyến mãi</a></li>
+        <li><a href="news.html" class="nav-link">Tin tức</a></li>
+        <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn mobile-search-toggle" id="mobileSearchToggle" aria-label="Tìm kiếm"><span data-icon="search"></span></button>
+      <form class="header-search" role="search" onsubmit="return false;">
+        <span data-icon="search" style="width:16px;height:16px;color:var(--color-text-muted)"></span>
+        <input type="text" placeholder="Tìm bút, giấy, sổ tay...">
+        <button type="submit" aria-label="Tìm kiếm"><span data-icon="arrowRight"></span></button>
+      </form>
+      <a href="wishlist.html" class="icon-btn" aria-label="Yêu thích">
+        <span data-icon="heart"></span>
+        <span class="count" id="wishlistCount">2</span>
+      </a>
+      <a href="cart.html" class="icon-btn" aria-label="Giỏ hàng">
+        <span data-icon="cart"></span>
+        <span class="count" id="cartCount">3</span>
+      </a>
+      <div class="header-cta">
+        <a href="login.html" class="btn btn-outline btn-sm"><span data-icon="user"></span> Đăng nhập</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile search bar -->
+  <div class="container" id="mobileSearchBar" style="display:none; padding-bottom:14px;">
+    <form class="header-search" style="width:100%" onsubmit="return false;">
+      <span data-icon="search" style="width:16px;height:16px;color:var(--color-text-muted)"></span>
+      <input type="text" placeholder="Tìm bút, giấy, sổ tay...">
+      <button type="submit"><span data-icon="arrowRight"></span></button>
+    </form>
+  </div>
+
+  <!-- Category quick strip -->
+  <div class="category-strip">
+    <div class="container">
+      <a href="products.html?cat=but-bi"><span data-icon="pen" style="width:16px;height:16px"></span> Bút viết</a>
+      <a href="products.html?cat=giay-a4"><span data-icon="paperStack" style="width:16px;height:16px"></span> Giấy A4</a>
+      <a href="products.html?cat=so"><span data-icon="notebook" style="width:16px;height:16px"></span> Sổ tay</a>
+      <a href="products.html?cat=ho-so"><span data-icon="folder" style="width:16px;height:16px"></span> Hồ sơ</a>
+      <a href="products.html?cat=bang-keo"><span data-icon="tape" style="width:16px;height:16px"></span> Băng keo &amp; Kéo</a>
+      <a href="products.html?cat=may-tinh"><span data-icon="calculator" style="width:16px;height:16px"></span> Máy tính Casio</a>
+      <a href="products.html?cat=may-in"><span data-icon="printer" style="width:16px;height:16px"></span> Máy in &amp; Mực</a>
+      <a href="products.html?filter=sale" style="color:var(--color-primary)"><span data-icon="percent" style="width:16px;height:16px"></span> Khuyến mãi</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================== MOBILE DRAWER ============================== -->
+<div class="mobile-drawer" id="mobileDrawer">
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="drawer-panel">
+    <button class="icon-btn drawer-close" id="drawerClose"><span data-icon="close"></span></button>
+    <a href="index.html" class="logo">
+      <img class="logo-mark" src="images/logo/logo.svg" alt="VPP Hoàng Linh">
+      <span class="logo-text">VPP Hoàng Linh<span>Dụng cụ học tập &amp; văn phòng</span></span>
+    </a>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li>
+        <button class="drawer-toggle-sub">Sản phẩm <span data-icon="chevronDown"></span></button>
+        <ul class="drawer-sub">
+          <li><a href="products.html?cat=but-bi">Bút viết</a></li>
+          <li><a href="products.html?cat=giay-a4">Giấy &amp; Sổ</a></li>
+          <li><a href="products.html?cat=ho-so">Hồ sơ &amp; Kẹp file</a></li>
+          <li><a href="products.html?cat=may-tinh">Máy tính Casio</a></li>
+          <li><a href="products.html?cat=may-in">Máy in &amp; Mực in</a></li>
+        </ul>
+      </li>
+      <li><a href="products.html?filter=new">Sản phẩm mới</a></li>
+      <li><a href="products.html?filter=bestseller">Bán chạy</a></li>
+      <li><a href="products.html?filter=sale">Khuyến mãi</a></li>
+      <li><a href="news.html">Tin tức</a></li>
+      <li><a href="about.html">Giới thiệu</a></li>
+      <li><a href="contact.html">Liên hệ</a></li>
+      <li><a href="login.html">Đăng nhập / Đăng ký</a></li>
+    </ul>
+  </div>
+</div>
+
+<main>
+  <!-- ============================== HERO ============================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-slider">
+        <div class="hero-slide active" style="background-image:url('images/hero/hero-1.svg')">
+          <div class="hero-content">
+            <span class="badge">Ưu đãi mùa tựu trường</span>
+            <h1>Trang bị góc học tập &amp; văn phòng gọn gàng, chuyên nghiệp</h1>
+            <p>Hơn 2.000 sản phẩm văn phòng phẩm chính hãng — từ bút viết, giấy in đến thiết bị văn phòng, giao hàng toàn quốc trong 24h.</p>
+            <div class="hero-actions">
+              <a href="products.html" class="btn btn-primary btn-lg">Mua sắm ngay <span data-icon="arrowRight"></span></a>
+              <a href="products.html?filter=sale" class="btn btn-outline btn-lg">Xem khuyến mãi</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide" style="background-image:url('images/hero/hero-2.svg')">
+          <div class="hero-content">
+            <span class="badge">Flash Sale 24h</span>
+            <h1>Giảm đến 40% cho bút viết &amp; sổ tay</h1>
+            <p>Chương trình giảm giá sốc áp dụng cho hàng nghìn sản phẩm được yêu thích nhất, số lượng có hạn mỗi ngày.</p>
+            <div class="hero-actions">
+              <a href="products.html?filter=sale" class="btn btn-primary btn-lg">Săn deal ngay <span data-icon="arrowRight"></span></a>
+              <a href="news.html" class="btn btn-outline btn-lg">Xem thể lệ</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide" style="background-image:url('images/hero/hero-3.svg')">
+          <div class="hero-content">
+            <span class="badge">Khách hàng doanh nghiệp</span>
+            <h1>Giải pháp văn phòng phẩm cho doanh nghiệp, trường học</h1>
+            <p>Đặt hàng số lượng lớn với giá ưu đãi đặc biệt, hỗ trợ xuất hóa đơn VAT và giao hàng tận nơi.</p>
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-primary btn-lg">Liên hệ tư vấn <span data-icon="arrowRight"></span></a>
+            </div>
+          </div>
+        </div>
+        <button class="hero-arrow prev" aria-label="Trước"><span data-icon="chevronLeft"></span></button>
+        <button class="hero-arrow next" aria-label="Tiếp"><span data-icon="chevronRight"></span></button>
+        <div class="hero-dots"></div>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="hero-stat"><strong>2.000+</strong><span>Sản phẩm chính hãng</span></div>
+        <div class="hero-stat"><strong>50.000+</strong><span>Khách hàng tin dùng</span></div>
+        <div class="hero-stat"><strong>24h</strong><span>Giao hàng nhanh</span></div>
+        <div class="hero-stat"><strong>4.8/5</strong><span>Đánh giá trung bình</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== TRUST STRIP ============================== -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="grid trust-strip reveal">
+        <div class="trust-item card"><span class="ic"><span data-icon="truck"></span></span><div><h5>Giao hàng nhanh</h5><p>Nội thành 2-4h, toàn quốc 1-3 ngày</p></div></div>
+        <div class="trust-item card"><span class="ic"><span data-icon="shield"></span></span><div><h5>Hàng chính hãng</h5><p>Cam kết 100% chính hãng, có hóa đơn</p></div></div>
+        <div class="trust-item card"><span class="ic"><span data-icon="refresh"></span></span><div><h5>Đổi trả dễ dàng</h5><p>Đổi trả miễn phí trong 7 ngày</p></div></div>
+        <div class="trust-item card"><span class="ic"><span data-icon="headset"></span></span><div><h5>Hỗ trợ 24/7</h5><p>Tư vấn nhiệt tình qua hotline, Zalo</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== DANH MỤC NỔI BẬT ============================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Khám phá</span><h2>Danh mục nổi bật</h2></div>
+        <a href="products.html" class="view-all">Xem tất cả <span data-icon="arrowRight"></span></a>
+      </div>
+      <div class="grid cat-grid reveal" id="categoryGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============================== SẢN PHẨM (TABS) ============================== -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Sản phẩm</span><h2>Được yêu thích nhất</h2></div>
+        <div class="tab-bar" data-tabtarget="tabProductTrack">
+          <button class="tab-btn active" data-filter="">Tất cả</button>
+          <button class="tab-btn" data-filter="new">Mới</button>
+          <button class="tab-btn" data-filter="bestseller">Bán chạy</button>
+          <button class="tab-btn" data-filter="sale">Khuyến mãi</button>
+        </div>
+      </div>
+      <div class="product-slider reveal">
+        <div class="product-track" id="tabProductTrack"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== PROMO BANNERS ============================== -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="grid promo-banners reveal">
+        <div class="promo-banner flash">
+          <span class="badge"><span data-icon="clock" style="width:12px;height:12px"></span> Flash Sale</span>
+          <h3>Giảm giá chớp nhoáng mỗi ngày</h3>
+          <p>Hàng trăm sản phẩm giảm giá sốc, số lượng giới hạn — nhanh tay kẻo lỡ!</p>
+          <div class="countdown">
+            <div><strong>08</strong><span>Giờ</span></div>
+            <div><strong>42</strong><span>Phút</span></div>
+            <div><strong>17</strong><span>Giây</span></div>
+          </div>
+          <a href="products.html?filter=sale" class="btn btn-primary btn-sm" style="margin-top:20px;width:fit-content">Mua ngay</a>
+        </div>
+        <div class="promo-banner combo">
+          <span class="badge"><span data-icon="gift" style="width:12px;height:12px"></span> Combo tiết kiệm</span>
+          <h3>Combo dụng cụ học tập trọn bộ</h3>
+          <p>Tiết kiệm hơn 20% khi mua combo bút, sổ, giấy note cho năm học mới.</p>
+          <a href="products.html?filter=sale" class="btn btn-sm" style="margin-top:20px;width:fit-content;background:#fff;color:var(--color-secondary)">Khám phá combo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SẢN PHẨM MỚI / BÁN CHẠY ============================== -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Vừa cập nhật</span><h2>Sản phẩm mới về</h2></div>
+        <div class="slider-nav"><button class="prev" aria-label="Trước"><span data-icon="chevronLeft"></span></button><button class="next" aria-label="Tiếp"><span data-icon="chevronRight"></span></button></div>
+      </div>
+      <div class="product-slider reveal">
+        <div class="product-track" id="newProductTrack"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== THƯƠNG HIỆU ============================== -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Đối tác</span><h2>Thương hiệu nổi bật</h2></div>
+      </div>
+      <div class="grid brand-strip reveal" id="brandStrip"></div>
+    </div>
+  </section>
+
+  <!-- ============================== ĐÁNH GIÁ KHÁCH HÀNG ============================== -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Cảm nhận</span><h2>Khách hàng nói gì về chúng tôi</h2></div>
+      </div>
+      <div class="grid testi-grid reveal" id="testimonialGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============================== TIN TỨC ============================== -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Cập nhật</span><h2>Tin tức &amp; Mẹo hay</h2></div>
+        <a href="news.html" class="view-all">Xem tất cả <span data-icon="arrowRight"></span></a>
+      </div>
+      <div class="grid news-grid reveal" id="homeNewsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============================== NEWSLETTER ============================== -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter-strip reveal">
+        <div>
+          <h3>Nhận ưu đãi mới nhất qua email</h3>
+          <p>Đăng ký để không bỏ lỡ các chương trình khuyến mãi và sản phẩm mới.</p>
+        </div>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Nhập email của bạn">
+          <button type="submit">Đăng ký</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  // Home-page bootstrap: render dynamic sections from dummy data
+  document.addEventListener('DOMContentLoaded', () => {
+    const catGrid = document.getElementById('categoryGrid');
+    if (catGrid) {
+      catGrid.innerHTML = CATEGORIES.slice(0, 12).map(c => `
+        <a href="products.html?cat=${c.id}" class="cat-card">
+          <span class="cat-icon"><span data-icon="${c.icon}"></span></span>
+          <h4>${c.name}</h4><span>${c.count} sản phẩm</span>
+        </a>`).join('');
+      renderIcons(catGrid);
+    }
+    if (window.renderProductRow) {
+      renderProductRow(document.getElementById('tabProductTrack'), '');
+      renderProductRow(document.getElementById('newProductTrack'), 'new');
+    }
+    const brandStrip = document.getElementById('brandStrip');
+    if (brandStrip) { brandStrip.innerHTML = BRANDS.map(b => `<div class="brand-logo"><img src="${b.logo}" alt="${b.name}" loading="lazy"></div>`).join(''); }
+
+    const testiGrid = document.getElementById('testimonialGrid');
+    if (testiGrid) {
+      testiGrid.innerHTML = TESTIMONIALS.map(t => `
+        <div class="card testi-card">
+          <div class="testi-stars">${Array.from({length:5}).map((_,i)=>`<span data-icon="${i<t.rating?'star':'starOutline'}"></span>`).join('')}</div>
+          <p>"${t.text}"</p>
+          <div class="testi-user"><div class="testi-avatar"><img src="${t.avatar}" alt="${t.name}" loading="lazy"></div><div><strong>${t.name}</strong><span>${t.role}</span></div></div>
+        </div>`).join('');
+      renderIcons(testiGrid);
+    }
+
+    const homeNewsGrid = document.getElementById('homeNewsGrid');
+    if (homeNewsGrid) {
+      homeNewsGrid.innerHTML = NEWS.slice(0, 3).map(n => `
+        <a href="news.html" class="card news-card">
+          <div class="news-media"><img src="${n.image}" alt="${n.title}" loading="lazy"></div>
+          <div class="news-body">
+            <div class="news-meta"><span>${n.cat}</span><span>•</span><span>${n.date}</span></div>
+            <h4>${n.title}</h4>
+            <p>${n.excerpt}</p>
+          </div>
+        </a>`).join('');
+      renderIcons(homeNewsGrid);
+    }
+  });
+</script>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="logo">
+          <img class="logo-mark" src="images/logo/logo.svg" alt="VPP Hoàng Linh">
+          <span class="logo-text">VPP Hoàng Linh<span>Dụng cụ học tập &amp; văn phòng</span></span>
+        </a>
+        <p>Chuyên cung cấp văn phòng phẩm, dụng cụ học tập chính hãng với giá tốt — phục vụ học sinh, sinh viên, doanh nghiệp trên toàn quốc từ năm 2016.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><span data-icon="facebook" style="width:16px;height:16px"></span></a>
+          <a href="#" aria-label="Instagram"><span data-icon="instagram" style="width:16px;height:16px"></span></a>
+          <a href="#" aria-label="Youtube"><span data-icon="youtube" style="width:16px;height:16px"></span></a>
+          <a href="#" aria-label="Zalo"><span data-icon="zalo" style="width:16px;height:16px"></span></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Giới thiệu</h5>
+        <ul>
+          <li><a href="about.html">Giới thiệu cửa hàng</a></li>
+          <li><a href="about.html#vision">Tầm nhìn &amp; Sứ mệnh</a></li>
+          <li><a href="about.html#values">Giá trị cốt lõi</a></li>
+          <li><a href="contact.html">Tuyển dụng</a></li>
+          <li><a href="about.html#business">Thông tin doanh nghiệp</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Hỗ trợ khách hàng</h5>
+        <ul>
+          <li><a href="faq.html">Hướng dẫn mua hàng</a></li>
+          <li><a href="faq.html">Câu hỏi thường gặp</a></li>
+          <li><a href="cart.html">Chính sách đổi trả</a></li>
+          <li><a href="checkout.html">Chính sách vận chuyển</a></li>
+          <li><a href="contact.html">Chính sách bảo mật</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Tài khoản</h5>
+        <ul>
+          <li><a href="account.html">Hồ sơ của tôi</a></li>
+          <li><a href="account.html">Lịch sử đơn hàng</a></li>
+          <li><a href="wishlist.html">Sản phẩm yêu thích</a></li>
+          <li><a href="cart.html">Giỏ hàng</a></li>
+          <li><a href="login.html">Đăng nhập / Đăng ký</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Liên hệ</h5>
+        <ul class="footer-contact">
+          <li><span data-icon="mapMarkerAlt"></span> 123 Nguyễn Văn Cừ, P.4, Q.5, TP. Hồ Chí Minh</li>
+          <li><span data-icon="phone"></span> 1900 6868 (7:30 - 21:00)</li>
+          <li><span data-icon="mail"></span> hotro@vpphoanglinh.vn</li>
+        </ul>
+        <div class="footer-newsletter">
+          <input type="email" placeholder="Email của bạn">
+          <button type="button">Đăng ký</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 VPP Hoàng Linh — Bảo lưu mọi quyền.</span>
+      <div class="footer-payments">
+        <span>VISA</span><span>MOMO</span><span>ZaloPay</span><span>COD</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Lên đầu trang"><span data-icon="arrowUp"></span></button>
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script src="js/icons.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/product.js"></script>
+<script src="js/cart.js"></script>
+
+</body>
+</html>

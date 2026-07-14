@@ -1,0 +1,7 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#DD0000"/><stop offset="55%" stop-color="#F03A3A"/><stop offset="100%" stop-color="#FF7A00"/>
+  </linearGradient></defs>
+  <rect width="120" height="120" rx="26" fill="url(#logoGrad)"/>
+  <text x="60" y="76" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="46" fill="#fff" text-anchor="middle">HL</text>
+</svg>

@@ -1,0 +1,66 @@
+/* ==========================================================================
+   AUTH PAGES (Login / Register / Forgot password)
+   ========================================================================== */
+.auth-wrap { min-height: calc(100vh - var(--header-height)); display: grid; grid-template-columns: 1fr 1fr; }
+.auth-visual {
+  background: var(--gradient-hero); color: #fff; display: flex; flex-direction: column; justify-content: center;
+  padding: var(--space-8); position: relative; overflow: hidden;
+}
+.auth-visual::before { content:''; position: absolute; inset: 0; background: radial-gradient(circle at 20% 20%, rgba(255,255,255,.15), transparent 40%), radial-gradient(circle at 90% 80%, rgba(255,255,255,.12), transparent 40%); }
+.auth-visual-content { position: relative; z-index: 2; max-width: 420px; }
+.auth-visual h2 { font-size: 2rem; margin-bottom: var(--space-4); }
+.auth-visual p { opacity: .9; margin-bottom: var(--space-6); }
+.auth-visual-list { display: flex; flex-direction: column; gap: var(--space-4); }
+.auth-visual-list li { display: flex; align-items: center; gap: 12px; font-size: 0.92rem; }
+.auth-visual-list .ic { width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,.18); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.auth-visual-list svg { width: 18px; height: 18px; }
+.auth-visual-deco { position: absolute; width: 300px; height: 300px; right: -60px; bottom: -60px; opacity: .15; }
+
+.auth-form-col { display: flex; align-items: center; justify-content: center; padding: var(--space-7); }
+.auth-form-box { width: 100%; max-width: 420px; }
+.auth-form-box .logo { margin-bottom: var(--space-6); justify-content: flex-start; }
+.auth-form-box h1 { font-size: 1.6rem; margin-bottom: var(--space-2); }
+.auth-form-box .sub { color: var(--color-text-secondary); margin-bottom: var(--space-6); font-size: 0.92rem; }
+.auth-form-box .sub a { color: var(--color-primary); font-weight: 600; }
+.auth-row-between { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-5); }
+.auth-row-between a { font-size: 0.85rem; color: var(--color-primary); font-weight: 600; }
+.password-field { position: relative; }
+.password-toggle { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); color: var(--color-text-muted); }
+.password-toggle svg { width: 18px; height: 18px; }
+.password-strength { display: flex; gap: 4px; margin-top: 8px; }
+.password-strength div { height: 4px; flex: 1; border-radius: 2px; background: var(--color-border); transition: background var(--transition-fast); }
+
+.auth-divider { display: flex; align-items: center; gap: var(--space-3); margin: var(--space-5) 0; color: var(--color-text-muted); font-size: 0.82rem; }
+.auth-divider::before, .auth-divider::after { content: ''; flex: 1; height: 1px; background: var(--color-border); }
+.social-login { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+.social-btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px; border: 1.5px solid var(--color-border); border-radius: var(--radius-sm); font-weight: 600; font-size: 0.88rem; transition: all var(--transition-fast); }
+.social-btn:hover { border-color: var(--color-primary); background: var(--color-primary-light); }
+.social-btn svg { width: 18px; height: 18px; }
+
+/* ==========================================================================
+   ACCOUNT DASHBOARD
+   ========================================================================== */
+.account-layout { display: grid; grid-template-columns: 260px 1fr; gap: var(--space-6); align-items: flex-start; }
+.account-sidebar { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-5); position: sticky; top: calc(var(--header-height) + 16px); }
+.account-user { display: flex; align-items: center; gap: 12px; padding-bottom: var(--space-4); margin-bottom: var(--space-4); border-bottom: 1px solid var(--color-border); }
+.account-user .avatar { width: 52px; height: 52px; border-radius: 50%; background: var(--gradient-hero); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: var(--font-heading); }
+.account-user strong { display: block; font-size: 0.95rem; }
+.account-user span { font-size: 0.78rem; color: var(--color-text-muted); }
+.account-nav li a { display: flex; align-items: center; gap: 12px; padding: 12px 10px; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; color: var(--color-text-secondary); transition: all var(--transition-fast); }
+.account-nav li a:hover, .account-nav li a.active { background: var(--color-primary-light); color: var(--color-primary); font-weight: 600; }
+.account-nav svg { width: 18px; height: 18px; }
+.account-nav li { margin-bottom: 4px; }
+.account-nav .logout { color: var(--color-primary); margin-top: var(--space-3); border-top: 1px solid var(--color-border); padding-top: var(--space-4); }
+
+.account-content { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6); }
+.account-content h2 { font-size: 1.3rem; margin-bottom: var(--space-5); }
+
+.order-card { border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-4); margin-bottom: var(--space-4); }
+.order-card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-3); padding-bottom: var(--space-3); border-bottom: 1px solid var(--color-border); }
+.order-card-head strong { font-size: 0.92rem; }
+.order-card-head span { font-size: 0.78rem; color: var(--color-text-muted); }
+.order-card-items { display: flex; gap: 10px; margin-bottom: var(--space-3); }
+.order-card-items .thumb { width: 56px; height: 56px; border-radius: var(--radius-sm); background: var(--color-bg); overflow: hidden; }
+.order-card-items .thumb svg, .order-card-items .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.order-card-foot { display: flex; justify-content: space-between; align-items: center; }
+.order-card-foot .total { font-weight: 700; color: var(--color-primary); }
