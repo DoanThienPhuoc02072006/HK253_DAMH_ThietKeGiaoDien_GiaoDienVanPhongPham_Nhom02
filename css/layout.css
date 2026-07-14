@@ -96,7 +96,7 @@ li.has-mega:hover .mega-menu { opacity: 1; visibility: visible; transform: trans
     flex-shrink: 0;
     overflow: hidden;
     padding: 0;
-     margin-right: 25px
+    margin-right: 27px;
 }
 .header-search button svg {
     width: 16px;
