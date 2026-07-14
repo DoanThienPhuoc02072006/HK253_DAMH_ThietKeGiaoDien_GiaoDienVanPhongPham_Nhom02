@@ -80,7 +80,7 @@ li.has-mega:hover .mega-menu { opacity: 1; visibility: visible; transform: trans
 .header-search {
   display: flex; align-items: center; gap: 8px;
   background: var(--color-bg); border: 1.5px solid var(--color-border); border-radius: var(--radius-full);
-  padding: 9px 8px 9px 18px; width: 200px; transition: all var(--transition-base); margin-right: 35px;
+  padding: 9px 8px 9px 18px; width: 200px; transition: all var(--transition-base); margin-right: 40px;
 }
 .header-search:focus-within { border-color: var(--color-primary); box-shadow: 0 0 0 4px var(--color-primary-light); background: #fff; }
 .header-search input { flex: 1; background: transparent; border: none; outline: none; font-size: 0.88rem; }
